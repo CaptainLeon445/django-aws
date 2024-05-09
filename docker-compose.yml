@@ -17,6 +17,16 @@ services:
     depends_on:
       - db
 
+  nginx: 
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports: 
+      - 80:80
+    depends_on:
+      - server
+    
+
   db:
     container_name: db
     image: postgres:12
