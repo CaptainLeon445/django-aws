@@ -1,0 +1,12 @@
+__pycache__/
+*.bak
+*.dat
+*.dir
+*.sqlite3
+*.db
+*.log
+*.ji
+.env
+env/
+*.pid
+env/
